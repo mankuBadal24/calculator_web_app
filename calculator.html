@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-mainlogo" >
+            
+            <i class="fa-solid fa-calculator"></i>   
+            
+        </div>
+        <div class="navbar-mainhead">
+            <h1><center>
+               Mayank Badal
+            </center></h1>
+        </div>
+        <div class="navbar-mainsocials">              
+            <a href="https://www.linkedin.com/in/mayank-badal-573257258/">  
+                <img class="navbar-n" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square1-512.png" alt="linkedin">
+            </a>
+           
+        </div>
+    </nav>
+    <center><h1><b>Calculator</b></h1></center>
+    <div class="cc">
+    <form action="">
+        <div class="display">
+            <input type="text" name="text" id="out" readonly>
+        </div>
+        <div class="act">
+            <div id="emp"></div>
+            <input type="button" id="sum" onclick="add('+')" value="+">
+            <input type="button" id="num7" onclick="add(7)" value="7">
+            <input type="button" id="num8" onclick="add(8)" value="8">
+            <input type="button" id="num9" onclick="add(9)" value="9">
+            <input type="button" id="num4" onclick="add(4)" value="4">
+            <input type="button" id="num5" onclick="add(5)" value="5">
+            <input type="button" id="num6" onclick="add(6)" value="6">
+            <input type="button" id="num1" onclick="add(1)" value="1">
+            <input type="button" id="num2" onclick="add(2)" value="2">
+            <input type="button" id="num3" onclick="add(3)" value="3">
+            <input type="button" id="div" onclick="add('/')" value="/">
+            <input type="button" id="mul" onclick="add('*')" value="X">
+            <input type="button" id="sub" onclick="add('-')" value="-">
+            <input type="button" id="equal" onclick="cal()" value="=">
+            <input type="button" id="num0" onclick="add(0)" value="0">
+            <input type="button" id="dec" onclick="add('.')" value=".">
+            <input type="reset"  id="clear" value="C">
+        </div>
+    </form>
+    </div>
+    
+</body>
+<script src="calc.js"></script>
+</html>
